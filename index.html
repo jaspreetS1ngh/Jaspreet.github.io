@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaspreet Singh - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kTc5J2jUaWgAdXtF5G+E6lnU+0e0QFjx/x5CS6Nay9g+ro8PmnTm7E3E20Sbks3H5E4RJMHt5KsLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .dropdown-content {
+            display: none;
+        }
+
+        .dropdown-content.show {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-gray-900 text-white py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold">Jaspreet Singh</h1>
+            <p class="mt-4 text-2xl"> Software Developer </p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="https://github.com/jaspreetS1ngh" class="text-white hover:underline" target="_blank">
+                    <i class="fab fa-github fa-2x">Github</i>
+                </a>
+                <a href="https://leetcode.com/u/js724415/" class="text-white hover:underline" target="_blank">
+                    <i class="fas fa-code fa-2x">LeetCode</i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6 text-center">About Me</h2>
+            <p class="text-lg leading-relaxed text-center">I am a third-year Computer Science student at Kwantlen Polytechnic University, passionate about technology and software development. With experience in DevOps, cloud computing, and full-stack development, I am eager to contribute to innovative projects.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6 text-center">Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Programming Languages</h3>
+                    <p>Java, Kotlin, Python, JavaScript, C#</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Web Development</h3>
+                    <p>HTML, CSS, React.js, Angular, Node.js, Tailwind CSS</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Database Systems</h3>
+                    <p>Oracle, MySQL, MongoDB, PostgreSQL</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Technologies</h3>
+                    <p>AWS CDK, AWS SDK, JavaFX, Flask, Django, Docker, Openshift, OpenGL</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Testing Frameworks and Tools</h3>
+                    <p>Junit, Postman, Cypress</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Soft Skills</h3>
+                    <p>Communication, Teamwork, Leadership, Problem Solving</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Certifications</h3>
+                    <p>AWS Certified Solutions Architect, AWS Certified Cloud Practitioner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6 text-center">Experience</h2>
+            <div class="space-y-6">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleDropdown('exp1')">
+                        <h3 class="text-2xl font-semibold">Software Developer Intern at BC Registries</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <p class="mt-2">Victoria, BC (September 2023 - Current)</p>
+                    <div id="exp1" class="dropdown-content mt-4">
+                        <ul class="list-disc list-inside">
+                            <li>Developed robust microservices using Python, Flask, and other technologies to handle high volumes of requests.</li>
+                            <li>Implemented and tested authorization APIs for internal systems, ensuring functionality and scalability.</li>
+                            <li>Optimized system performance by implementing caching strategies and reducing database calls.</li>
+                            <li>Designed and implemented monitoring solutions to enhance system stability and reliability.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleDropdown('exp2')">
+                        <h3 class="text-2xl font-semibold">Cloud Support Specialist at Amazon</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <p class="mt-2">Vancouver, BC (Sept 2021 - September 2023)</p>
+                    <div id="exp2" class="dropdown-content mt-4">
+                        <ul class="list-disc list-inside">
+                            <li>Collaborated with cross-functional teams to analyze and diagnose complex system issues, particularly in distributed systems and networking environments.</li>
+                            <li>Utilized diagnostic tools and methodologies to assess and resolve critical system issues, contributing to the efficiency and reliability of client operations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold">CodeBuddy API</h3>
+                    <p class="mt-2">Java, Spring Boot, Swagger, Apache HTTP Client, Google Cloud Platform App Engine</p>
+                    <p class="mt-2">Built an API orchestrator microservice providing REST APIs for common LeetCode operations such as retrieving problems, using Apache HTTP Client to make requests to LeetCode’s REST and GraphQL APIs. Deployed the API to Google Cloud Platform’s App Engine and used health endpoints to ensure availability.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold">BC Gov Three-Tier App Simplification</h3>
+                    <p class="mt-2">Spring Boot, Postman, Swagger</p>
+                    <p class="mt-2">Streamlined setup processes for public contributions by assessing current workflows and code. Developed efficient setup documentation for local Windows and Mac machines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
+            <p class="text-lg"><a href="mailto:iamjaspreetsingh.official@gmail.com" class="text-blue-600 hover:underline">Iamjaspreetsingh.official@gmail.com</a></p>
+            <p class="text-lg">Phone: +1 778 316 4973</p>
+            <p class="text-lg">Location: Vancouver, BC</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Jaspreet Singh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDropdown(id) {
+            var element = document.getElementById(id);
+            element.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
